@@ -4,7 +4,7 @@ process.stdin.setEncoding('utf-8');
 //na zdarzenie (.on) odczytu (readable), masz wykonać funkcję (function...).
 process.stdin.on('readable', function () {
     var input = process.stdin.read();
-    if(input){
+    if (input) {
         var instruction = input.toString().trim();
         switch (instruction) {
             case '/exit':
