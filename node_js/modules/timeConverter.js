@@ -9,11 +9,6 @@ function secToMin (seconds) {
     }
 }
 
-module.exports = {
-    secToMin: secToMin,
-    secToHours: secToHours
-}
-
 function secToHours (seconds) {
     if (typeof seconds === 'number') {
         var hours, min, sec;
@@ -25,3 +20,8 @@ function secToHours (seconds) {
         return 'Invalid argument'
     }
 } 
+
+module.exports = {
+    secToMin: secToMin,
+    secToHours: secToHours
+}
