@@ -1,5 +1,4 @@
-
-var OSinfo = require('./OSInfo');
+var OSinfo = require('./modules/OSInfo');
 
 //standardowo jest szesnastkowy (wejście jako buffer)
 process.stdin.setEncoding('utf-8');

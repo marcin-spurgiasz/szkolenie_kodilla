@@ -1,6 +1,6 @@
 //moduł dostarcza metody związane z systemem operacyjnym
 var os = require('os'),
-    timeConverter = require('./modules/timeConverter');
+    timeConverter = require('./timeConverter');
 
 function getOSinfo () {
     var type = os.type(),
