@@ -1,10 +1,13 @@
+
+var OSinfo = require('./OSInfo');
+
 //standardowo jest szesnastkowy (wejście jako buffer)
 process.stdin.setEncoding('utf-8');
 
 //na zdarzenie (.on) odczytu (readable), masz wykonać funkcję (function...).
 process.stdin.on('readable', function () {
     var input = process.stdin.read();
-    if(input){
+    if (input) {
         var instruction = input.toString().trim();
         switch (instruction) {
             case '/exit':
@@ -12,13 +15,17 @@ process.stdin.on('readable', function () {
                 process.exit();
                 break;
             case '/version':
-                console.log(process.versions.node);
+                process.stdout.write(process.versions.node);
                 break;
             case '/system_language':
-                console.log(process.LANG);
+                process.stdout.write(process.LANG);
+                break;
+            case '/getOSinfo':
+                OSinfo.print();
                 break;
             default:
                 process.stderr.write('Wrong instruction\n');
         }
     }
 });
+
