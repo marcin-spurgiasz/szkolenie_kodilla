@@ -3,11 +3,11 @@ var os = require('os'),
     timeConverter = require('./timeConverter');
 
 function getOSinfo () {
-    var type = os.type(),
-        release = os.release(),
-        cpu = os.cpus()[0].model,
-        uptime = os.uptime(),
-        userInfo = os.userInfo();
+	var type = os.type();
+    var release = os.release();
+    var cpu = os.cpus()[0].model;
+    var uptime = os.uptime();
+    var userInfo = os.userInfo();
     if (type === 'Darwin'){
         type = 'OSX';
     } else if (type === 'Windows_NT') {
