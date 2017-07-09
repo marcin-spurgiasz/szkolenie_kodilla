@@ -3,7 +3,7 @@ var os = require('os'),
     timeConverter = require('./timeConverter');
 
 function getOSinfo () {
-	var type = os.type();
+    var type = os.type();
     var release = os.release();
     var cpu = os.cpus()[0].model;
     var uptime = os.uptime();
