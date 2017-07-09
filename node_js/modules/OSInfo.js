@@ -1,6 +1,7 @@
 //moduł dostarcza metody związane z systemem operacyjnym
-var os = require('os'),
-    timeConverter = require('./timeConverter');
+var os = require('os');
+var colors = require('colors');
+var timeConverter = require('./timeConverter');
 
 function getOSinfo () {
     var type = os.type(),
@@ -13,12 +14,12 @@ function getOSinfo () {
     } else if (type === 'Windows_NT') {
         type = 'Windows';
     }
-    console.log('System:', type);
-    console.log('Release:', release);
-    console.log('CPU model:', cpu);
-    console.log('Uptime (min): ~', timeConverter.secToMin(uptime));
-    console.log('Uptime (h): ~', timeConverter.secToHours(uptime));
-    console.log('User name:', userInfo.username);
+    console.log('System:'.gray, type);
+    console.log('Release:'.red, release);
+    console.log('CPU model:'.blue, cpu);
+    console.log('Uptime (min): ~'.green, timeConverter.secToMin(uptime));
+    console.log('Uptime (h): ~'.green, timeConverter.secToHours(uptime));
+    console.log('User name:'.yellow, userInfo.username);
     console.log('Home dir:', userInfo.homedir);
 }
 
