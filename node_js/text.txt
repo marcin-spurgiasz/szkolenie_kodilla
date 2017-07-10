@@ -1,0 +1,1 @@
+cat.jpg,index.js,node_modules,notatki.txt,package.json,text.txt
