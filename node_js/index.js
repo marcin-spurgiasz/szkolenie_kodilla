@@ -1,1 +1,2 @@
-console.log('lala');
+var server = require('./modules/server');
+server.start();
