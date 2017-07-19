@@ -5,7 +5,7 @@ const world = 'world';
 console.log(`${hello} ${world}`);
 
 //zad2
-const multiply = (a, b = 1) => {return a * b};
+const multiply = (a, b = 1) => a * b;
 console.log(multiply(2));
 
 //zad3
