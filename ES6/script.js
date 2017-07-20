@@ -1,10 +1,3 @@
-// var element = React.createElement(App);
-// ReactDOM.render(element, document.getElementById('app'));
-
-var dom = function () {
-    var z =1;
-}
-
 class Stopwatch {
     constructor(display, results) {
         this.running = false;
@@ -91,14 +84,3 @@ var addTimeButton = document.getElementById('addTime');
 addTimeButton.addEventListener('click', stopwatch.addTime.bind(stopwatch));
 var resetTimesButton = document.getElementById('resetTimes');
 resetTimesButton.addEventListener('click', stopwatch.resetTimes.bind(stopwatch));
-
-
-// function foo(callback){
-//     var a = 1;
-//     callback(a);
-// }
-
-// foo(function(a){
-//     //do it after previously function was executed
-//     console.log(a);
-// });

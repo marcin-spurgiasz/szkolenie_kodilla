@@ -4,13 +4,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// var element = React.createElement(App);
-// ReactDOM.render(element, document.getElementById('app'));
-
-var dom = function dom() {
-    var z = 1;
-};
-
 var Stopwatch = function () {
     function Stopwatch(display, results) {
         _classCallCheck(this, Stopwatch);
@@ -116,13 +109,3 @@ var addTimeButton = document.getElementById('addTime');
 addTimeButton.addEventListener('click', stopwatch.addTime.bind(stopwatch));
 var resetTimesButton = document.getElementById('resetTimes');
 resetTimesButton.addEventListener('click', stopwatch.resetTimes.bind(stopwatch));
-
-// function foo(callback){
-//     var a = 1;
-//     callback(a);
-// }
-
-// foo(function(a){
-//     //do it after previously function was executed
-//     console.log(a);
-// });
