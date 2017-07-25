@@ -22,7 +22,13 @@ App = React.createClass({
                         sourceUrl: data.url
                     };
                     resolve(gif);
+                } else {
+                    reject(new Error(this.statusText));
                 }
+            };
+            request.onerror = () => {
+                reject(new Error(
+                   `XMLHttpRequest Error: ${this.statusText}`));
             };
             xhr.send();
         });
@@ -38,7 +44,8 @@ App = React.createClass({
                 gif: gif,
                 searchingText: searchingText
             });
-        });
+        })
+        .catch(error => console.error('Something went wrong', reason));
         // this.getGif(searchingText, function (gif) {
         //     this.setState({
         //         loading: false,
