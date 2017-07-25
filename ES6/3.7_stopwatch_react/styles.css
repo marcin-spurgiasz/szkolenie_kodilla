@@ -10,12 +10,10 @@
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
-.navButtons {
+.controls {
     padding: 10px;
 }
-.startStopButtons {
-    padding: 10px;
-}
+
 .stopwatch {
     background-color: #00466b;
     border-radius: 20px;
@@ -39,7 +37,7 @@
     padding: 10px;
 }
 
-a {
+button {
   background: #0591e8;
   background-image: -webkit-linear-gradient(top, #0591e8, #00466b);
   background-image: -moz-linear-gradient(top, #0591e8, #00466b);
@@ -52,12 +50,13 @@ a {
   text-shadow: 4px 3px 3px #0d0d0d;
   color: #ffd900;
   padding: 5px 10px 5px 10px;
+  margin: 2px;
   font-size: 15px;
   border: solid #1f628d 2px;
   text-decoration: none;
 }
 
-a:hover {
+button:hover {
   background: #05aeeb;
   background-image: -webkit-linear-gradient(top, #05aeeb, #0657b3);
   background-image: -moz-linear-gradient(top, #05aeeb, #0657b3);
