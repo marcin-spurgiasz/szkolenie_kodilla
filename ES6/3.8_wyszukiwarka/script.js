@@ -33,7 +33,7 @@ class App extends React.Component {
                       value={this.state.searchText}
                     />    
                </form>
-               <UsersList clssName='col-md-4'users={this.state.users}/> 
+               <UsersList className='col-md-4' users={this.state.users}/> 
             </div>
         );
     }
