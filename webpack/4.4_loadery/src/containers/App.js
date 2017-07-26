@@ -1,8 +1,10 @@
 import React from 'react';
-import uuid from 'uuid'
+import uuid from 'uuid';
 
-import Title from '../components/Title'
-import style from './App.css'
+import Title from '../components/Title';
+import TodoList from '../components/TodoList';
+
+import style from './App.css';
 
 class App extends React.Component {
     constructor(props){
@@ -26,7 +28,8 @@ class App extends React.Component {
     render() {
         return (
             <div className={style.TodoApp}>
-                <Title NumberOfTodos={this.state.data.length}/>
+                <Title numberOfTodos={this.state.data.length}/>
+                <TodoList onRemoveSelect = {removeItem => this.removeTodo(removeItem)} todos={this.state.data}/>
             </div>
         );
     }
