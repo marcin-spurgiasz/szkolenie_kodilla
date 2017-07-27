@@ -1,17 +1,20 @@
 import React from 'react';
 import style from '../containers/App.css'
 
-const Todo = ({todoItem, onRemoveSelect}) => {
+const Todo = ({todoItem, todoId, onRemoveSelect}) => {
     return (
         <li className="list-group-item">
-            <div className="video-list media">
+            <div className="media">
                 <div className="media-left">
-                    {todoItem.id} 
+                    {todoId} 
                 </div>
                 <div className="media-body">
-                    <div className="media-heading">
-                        {todoItem.text}
-                    </div>
+                    <h5 className="mt-0 mb-1">Task</h5>
+                    {todoItem.text}
+                </div>
+                <div className="media-body">
+                    <h5 className="mt-0 mb-1">Priority</h5>
+                    {todoItem.priority}
                 </div>
                 <div className="media-right">
                     <button className="btn btn-default" onClick={() => onRemoveSelect(todoItem.id)}>Remove</button>
