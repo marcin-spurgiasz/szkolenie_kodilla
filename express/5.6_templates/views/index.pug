@@ -1,6 +1,6 @@
 html
     head
-        title Przykładowa strona
+        title Logowanie
     body
         include ./header.pug
         form(action="http://localhost:3000/userform" method="GET" style="margin: 10px 0px 10px 0px")
@@ -11,5 +11,5 @@ html
             input(type="text" name="last_name")
 
             button(type="submit") Submit
-        a(href="/auth/google") Logowanie google
+        a(href="http://localhost:3000/auth/google") Logowanie google
         include ./footer.pug
