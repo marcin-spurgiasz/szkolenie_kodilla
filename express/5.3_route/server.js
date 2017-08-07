@@ -7,17 +7,17 @@ var fileContent;
 app.use(bodyParser.json());
 
 
-app.get('/getNote',  (req, res) => {
-    fs.readFile('./test.json', 'utf8', function (err, data) {
+app.get('/getNote', (req, res) => {
+    fs.readFile('./test.json', 'utf8', (err, data) => {
         if (err) throw err;
-        fileContent = data
+        fileContent = data;
         res.send(data);
     });
 });
 
 app.post('/updateNote/:note', (req, res) => {
     fileContent = req.params.note;
-    fs.writeFile('./test.json', fileContent, function (err, data) {
+    fs.writeFile('./test.json', fileContent, (err, data) => {
         if (err) throw err;
         console.log('file update');
     });
