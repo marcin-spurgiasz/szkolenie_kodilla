@@ -8,7 +8,7 @@ var OptimizeJsPlugin = require('optimize-js-plugin');
 var env = process.env.NODE_ENV || 'development';
 var plugins = [
 new HtmlWebpackPlugin({
-        template: 'index.html',
+        template: 'client/index.html',
         filename: 'index.html',
         inject: 'body',
     })
@@ -28,8 +28,8 @@ plugins.push(
 module.exports = {
     entry: [
         'react-hot-loader/patch',
-        'webpack-dev-server/client?http://localhost:8080',
-        'webpack/hot/only-dev-server',
+       // 'webpack-dev-server/client?http://localhost:8080',
+       // 'webpack/hot/only-dev-server',
         './client/index.js'
     ],
     output: {

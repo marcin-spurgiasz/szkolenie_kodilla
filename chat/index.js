@@ -31,7 +31,7 @@ io.on('connection', function (socket) {
 
 io.on('connection', function (socket) { 
     socket.on('disconnect', () => {
-        userService.removerUser(socket.id);
+        userService.removeUser(socket.id);
         socket.broadcast.emit('update', {
             users: userService.getAllUsers()
         });
@@ -49,6 +49,6 @@ io.on('connection', function (socket) {
     console.log('lala');
 });
 
-server.listen(8080, function () {
+server.listen(3000, function () {
     console.log('listening on *:8080');
 });
