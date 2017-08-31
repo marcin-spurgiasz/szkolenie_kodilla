@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navigation from './navigation';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
-
+import '../style/country.css'
 export default class App extends Component {
   render() {
     return (

@@ -3,7 +3,7 @@
     height: 100vh;
 }
 
-.country-wrapper {
+.country_wrapper {
     height: 400px;
     width: 300px;
     border-radius: 10px;
@@ -20,7 +20,7 @@ header {
     border-top-right-radius: 10px;
 }
 
-.country-photo {
+.country_photo {
     position: absolute;
     width: 115px;
     height: 115px;
@@ -32,7 +32,7 @@ header {
     margin: 0 auto;
 }
 
-.country-info {
+.country_info {
     padding: 55px 5px 65px;
     font-family: 'Roboto Condesed';
 }
@@ -81,25 +81,25 @@ h2 {
     padding: 6px 0;
 }
 
-.countries-list {
+.countries_list {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.single-country {
+.single_country {
     width: 26%;
     height: 300px;
     margin-top: 50px;
 }
 
-.country-logo-wrapper {
+.country_logo_wrapper {
     height: 100%;
     width: 100%;
 }
 
-.country-logo {
+.country_logo {
     max-width: 100%;
     max-height: 100%;
 }
