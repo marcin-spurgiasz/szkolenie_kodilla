@@ -1,0 +1,33 @@
+.navbar {
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar_ul li:first-child {
+    font-weight: 800;
+    text-decoration-style: none;
+}
+
+.navbar_ul li {
+    display: inline;
+    padding: 10px;
+}
+
+a {
+    color: dodgerblue;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a:hover {
+    color: darkblue;
+}
+
+.nav_logo:hover {
+  color: dodgerblue;
+}
+
+
+
