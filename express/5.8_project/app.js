@@ -10,6 +10,9 @@ const passport = require('passport');
 const Auth0Strategy = require('passport-auth0');
 const flash = require('connect-flash');
 
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/usersDB');
+
 const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn();
 
 
